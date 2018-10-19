@@ -1,0 +1,62 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Home page</title>
+
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+
+	<!-- side menu on hover https://bootsnipp.com/snippets/featured/side-menu-on-hover -->
+	<link rel="stylesheet" href="./css/custom/sidebar.css" />
+	<!-- custom changes --> 
+	<link rel="stylesheet" type="text/css" href="css/custom/HomePage.css" />
+	<!-- content order important, 
+	1.core, 2.init -->
+	<script src="./js/content/core.js" async></script>
+	<script src="./js/content/init.override.js" async></script>
+	<script src="./js/content/init.js" async></script>
+
+	<script>
+    window.onload = function(){
+    	init();
+    };
+	</script>
+</head>
+<body>
+
+	<div id="root" class="row">
+		<!-- nav bar -->
+		<div class="col-md-2">
+			<nav class="navbar navbar-default sidebar" role="navigation">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-sidebar-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>      
+					</div>
+					<div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li id="menu"><a href="#">Home Page</a></li>  
+							<li id="menu1" class="active"><a href="#" onclick="return menu(1);">Home</a></li>         
+							<li id="menu2" ><a href="#" onclick="return menu(2);">Second Tab</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+
+		<!-- main content --> 
+		<div class="col-md-10">
+			<div id="content" class="row align-items-center">
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,118 @@
+body {
+    background: black fixed url("../../resources/kitty2.png") no-repeat;
+    background-position: -0px -0px;
+    background-size: 100%;
+
+    width: calc(100vw - 34px);
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    font-size: 1.1em;
+    color: #ebe6ff;
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(227, 61, 146);
+}
+
+
+/* 
+    input 
+*/
+
+input {
+    width: 100%;
+    background-color: rgba(255,255,255,0.2);
+    border: 0px #000 solid;
+    color: white;
+    padding: 4px 4px 1px 6px;
+}
+
+input:focus {
+    outline: none;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #eaeaea;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #eaeaea;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #eaeaea;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #eaeaea;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #eaeaea;
+}
+
+/* 
+    Bootstrap list group
+*/
+
+#root {
+    margin-right: 0px;
+}
+
+#content {
+    padding: 20px 15px 0px 0px;
+    margin: 0px 0px 0px 0px;
+} 
+
+
+.list-group-item {
+    padding: 0.5px 5px;
+    background-color: inherit;
+    border: 0px solid #ddd;
+    font-family: Verdana,sans-serif;
+}
+
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+    background-color: #983b3b;
+    text-align: center;
+}
+
+.glyphicon {    
+    line-height: 1.4;
+}
+
+
+/* 
+	Nav bar color changes
+*/ 
+
+.navbar-default {
+    background-color: #000;
+    border-color: #000;
+    border: 0px;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #fff;
+
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: rgba(255,255,255,0.2);
+}
+
+a.list-group-item:focus, button.list-group-item:focus {
+    color: #fff;
+    text-decoration: none;
+    background-color: inherit;
+
+}
+
+a.list-group-item:hover, button.list-group-item:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: rgba(255,255,255,0.2);
+}
+
